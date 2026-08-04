@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family= Kdam+Thmor+Pro & display = swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif ;
+}
+
+#logo{
+    width: 200px;
+    height: 90px;
+}
+
+#banner{
+    background-image: url("https://sm.ign.com/ign_br/feature/h/how-long-i/how-long-is-the-last-of-us-part-2_pyx3.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+
+
+#trailer-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer{
+    width: 50%;
+}
+
+#sinopse{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description{
+    color: white;
+    font-size: 15px;
+    font-family: "kdam Thmor Pro", sans-serif;
+    width: 100%;
+}
+
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: red;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+
+}
+
+.actor-cards-conteiner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-conteiner{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: white;
+    font-size: 17px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.banner-1{
+    background-image: url("https://www.coxinhanerd.com.br/wp-content/uploads/2019/09/THUMB-35.jpg");
+}
+
+.banner-2{
+    background-image: url("https://cdn.ome.lt/-YxMYAOLMEU_Ia6nDjmozGwEzO8=/1200x630/smart/extras/conteudos/The_Last_of_Us_Joel_Q0X14Lw.jpg");
+}
+
+.banner-3{
+    background-image: url("https://s2.glbimg.com/2OHh2Dw0gCVSjrYOtv6X4yNGHCA=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/t/n/3BORX0SAy9q3KBK5dwHw/the-last-of-us-part-2-abby.jpeg");
+}
+
+footer{
+    height: 250px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: white;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 780px) {
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+}
+
